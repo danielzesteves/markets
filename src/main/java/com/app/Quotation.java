@@ -10,5 +10,5 @@ package com.app;
  * @author daniel
  */
 public class Quotation {
-    
+    public String vanessa;
 }
