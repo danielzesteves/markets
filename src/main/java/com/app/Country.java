@@ -5,7 +5,6 @@
  */
 package com.app;
 
-import java.util.HashSet;
 import lombok.Data;
 
 /**
@@ -13,7 +12,6 @@ import lombok.Data;
  * @author daniel
  */
 @Data
-public class Value extends Item{
-    private  HashSet<Quotation> quotes;
-    private  Country country;
+public class Country extends Item{
+    String iata;
 }

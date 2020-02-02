@@ -5,7 +5,7 @@
  */
 package com.app;
 
-import java.util.HashSet;
+import java.math.BigDecimal;
 import lombok.Data;
 
 /**
@@ -13,7 +13,10 @@ import lombok.Data;
  * @author daniel
  */
 @Data
-public class Value extends Item{
-    private  HashSet<Quotation> quotes;
-    private  Country country;
+public class Volume {
+    private BigDecimal nominal;
+    private BigDecimal cash;
+    private BigDecimal average;
+    private BigDecimal percentaje;
+    
 }
