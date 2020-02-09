@@ -17,7 +17,8 @@ public class init {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        IolAuthenticationService service = new IolAuthenticationService();
+        service.getToken();
     }
     
 }

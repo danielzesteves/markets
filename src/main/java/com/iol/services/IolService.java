@@ -5,9 +5,8 @@
  */
 package com.iol.services;
 
-import interfaces.IAuthenticationService;
-import interfaces.IToken;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -15,11 +14,16 @@ import org.springframework.stereotype.Service;
  *
  * @author daniel
  */
+@Component
 @Service
-@Component("iolAuthenticacion")
-public class IolAuthenticationService implements IAuthenticationService{
-   
-   public void getToken(){
-       System.out.println("Athu");
-   } 
+public class IolService {
+
+    @Autowired
+    private IolAuthenticationService iolAuthenticacion;
+    
+    public void getToken(){
+        System.out.println("iolAuthenticacion");
+        System.out.println(iolAuthenticacion);
+        iolAuthenticacion.getToken();
+    }
 }
