@@ -5,10 +5,13 @@
  */
 package interfaces;
 
+import org.springframework.stereotype.Component;
+
 /**
  *
  * @author daniel
  */
-public interface IAuthenticationService {
-    public boolean isAuthenticated();
+@Component
+public interface IIolService {
+    
 }

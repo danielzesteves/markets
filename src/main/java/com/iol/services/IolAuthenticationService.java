@@ -6,6 +6,7 @@
 package com.iol.services;
 
 import interfaces.IAuthenticationService;
+import interfaces.IAuthenticationService;
 import interfaces.IToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -15,11 +16,15 @@ import org.springframework.stereotype.Service;
  *
  * @author daniel
  */
-@Service
-@Component("iolAuthenticacion")
+@Component
 public class IolAuthenticationService implements IAuthenticationService{
    
    public void getToken(){
        System.out.println("Athu");
    } 
+
+    @Override
+    public boolean isAuthenticated() {
+        return true;
+    }
 }

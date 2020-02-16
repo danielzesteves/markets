@@ -5,6 +5,8 @@
  */
 package com.iol.services;
 
+import interfaces.IIolService;
+import interfaces.IIolService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.stereotype.Component;
@@ -15,8 +17,7 @@ import org.springframework.stereotype.Service;
  * @author daniel
  */
 @Component
-@Service
-public class IolService {
+public class IolService implements IIolService{
 
     @Autowired
     private IolAuthenticationService iolAuthenticacion;

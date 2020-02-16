@@ -6,6 +6,7 @@
 package com.controllers;
 
 import com.iol.services.IolService;
+import interfaces.IIolService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class IolController {
     
+    @Autowired
+    private IolService iolService;
+    
     @RequestMapping("/token")
-    public String getToken(IolService iolService){
+    public String getToken(){
+        System.out.println(iolService);
         iolService.getToken();
         return "Hola";
     }
