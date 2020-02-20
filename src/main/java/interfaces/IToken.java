@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.app;
+package interfaces;
 
-import java.util.HashSet;
-import lombok.Data;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author daniel
  */
-@Data
-public class Value extends Item{
-    private  HashSet<Quotation> quotes;
-    private  Country country;
+@Component
+public interface IToken {
+    
+    boolean isValid();
 }
