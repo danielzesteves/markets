@@ -25,6 +25,8 @@ public class IolAuthenticationService implements IAuthenticationService{
 
     @Override
     public boolean isAuthenticated() {
+        IolProperties props = new IolProperties();
+        System.out.println(props.toString());        
         return true;
     }
 }

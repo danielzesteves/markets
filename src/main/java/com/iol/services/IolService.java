@@ -23,8 +23,6 @@ public class IolService implements IIolService{
     private IolAuthenticationService iolAuthenticacion;
     
     public void getToken(){
-        System.out.println("iolAuthenticacion");
-        System.out.println(iolAuthenticacion);
-        iolAuthenticacion.getToken();
+        iolAuthenticacion.isAuthenticated();
     }
 }

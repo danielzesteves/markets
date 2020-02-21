@@ -25,7 +25,6 @@ public class IolController {
     
     @RequestMapping("/token")
     public String getToken(){
-        System.out.println(iolService);
         iolService.getToken();
         return "Hola";
     }
